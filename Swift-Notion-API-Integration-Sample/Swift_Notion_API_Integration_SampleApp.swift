@@ -11,7 +11,7 @@ import SwiftUI
 struct Swift_Notion_API_Integration_SampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(userViewModel: UserViewModel())
         }
     }
 }

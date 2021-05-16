@@ -11,6 +11,8 @@
 		7C460CF2264F76D800598641 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C460CF1264F76D800598641 /* ContentView.swift */; };
 		7C460CF4264F76D900598641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C460CF3264F76D900598641 /* Assets.xcassets */; };
 		7C460CF7264F76D900598641 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C460CF6264F76D900598641 /* Preview Assets.xcassets */; };
+		7C460CFF264F7A0400598641 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C460CFE264F7A0400598641 /* UserViewModel.swift */; };
+		7C460D04264FFC5800598641 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C460D03264FFC5800598641 /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		7C460CF3264F76D900598641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C460CF6264F76D900598641 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C460CF8264F76D900598641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C460CFE264F7A0400598641 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		7C460D03264FFC5800598641 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				7C460CEF264F76D800598641 /* Swift_Notion_API_Integration_SampleApp.swift */,
 				7C460CF1264F76D800598641 /* ContentView.swift */,
+				7C460CFE264F7A0400598641 /* UserViewModel.swift */,
+				7C460D03264FFC5800598641 /* Database.swift */,
 				7C460CF3264F76D900598641 /* Assets.xcassets */,
 				7C460CF8264F76D900598641 /* Info.plist */,
 				7C460CF5264F76D900598641 /* Preview Content */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C460CF2264F76D800598641 /* ContentView.swift in Sources */,
+				7C460CFF264F7A0400598641 /* UserViewModel.swift in Sources */,
+				7C460D04264FFC5800598641 /* Database.swift in Sources */,
 				7C460CF0264F76D800598641 /* Swift_Notion_API_Integration_SampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

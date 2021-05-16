@@ -8,14 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var userViewModel: UserViewModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                List(userViewModel.users) { user in
+                    HStack {
+                        Text(user.properties.Name.title[0].plain_text)
+                        
+                        Spacer()
+                        
+                        Text(user.properties.Email.rich_text[0].plain_text)
+                            .font(.caption)
+                    }
+                    
+                }
+                .listStyle(InsetListStyle())
+                .navigationBarItems(trailing:
+                    Button(action: {
+                        self.userViewModel.queryFromDatabase()
+                    }, label: {
+                        Text("Fetch")
+                    })
+                )
+                .navigationTitle("Users")
+            }
+            
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-    }
+            ContentView(userViewModel: UserViewModel())
+            
+        }
 }
